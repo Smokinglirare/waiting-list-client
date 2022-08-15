@@ -20,7 +20,7 @@ function App() {
   // Wishlist: Notifikation
 
   useEffect(() => {
-    socket.current = io(process.env.REACT_APP_[PORT]);
+    socket.current = io(process.env.REACT_APP_PORT);
 
     socket.current.on("connect", () => {
       console.log("Connected");
